@@ -1,0 +1,35 @@
+{
+	"name": "file-conversor",
+	"version": "1.0.0",
+	"description": "global package.json",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky",
+		"lint-staged": "lint-staged"
+	},
+	"lint-staged": {
+		"*.{js,ts,jsx,tsx}": [
+			"eslint --quiet --fix"
+		],
+		"*.{json,js,ts,jsx,tsx}": [
+			"prettier --write --ignore-unknown"
+		]
+	},
+	"keywords": [],
+	"author": "Santiago Baliño",
+	"license": "ISC",
+	"packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631",
+	"devDependencies": {
+		"@eslint/js": "^9.4.0",
+		"@types/eslint__js": "^8.42.3",
+		"eslint": "^9.4.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.1.3",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.7",
+		"prettier": "^3.3.2",
+		"typescript": "^5.4.5",
+		"typescript-eslint": "^7.13.0"
+	}
+}
